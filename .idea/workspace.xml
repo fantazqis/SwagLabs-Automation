@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f3933269-329c-4792-a8f8-86a36c40b8ca" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/Coretan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/RunnerAll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/RunningAll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/SiloamUploadPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/SociolaRotateImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/config/BaseConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/config/ConfigSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/config/SMTPConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/connection/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/connection/DriverSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/connection/DriverStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/connection/DriverStrategyExecution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/connection/driver/Chrome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/connection/driver/Edge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/connection/driver/Firefox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/connection/driver/InternetExplorer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/connection/driver/Opera.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/connection/driver/Safari.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/impl/ImplementationBoilerplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/impl/TestHooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/impl/TestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/page/PageBoilerplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/scenariomapping/ScenarioMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/util/CountProcessingTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/util/DataGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/util/DataOGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/util/ExcelReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/util/FeatureScenarioMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/util/FeatureToJavaConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/util/GlobalFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/util/ImageComparassion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/util/ManipulateImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/util/OpenCVFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/util_featurescript/FeatureScenarioMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/util_featurescript/FeatureToJavaConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/util_featurescript/ScenarioMapperToHooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automation/boilerplate/util_featurescript/Unused_DataOutlineGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/test001.feature" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2oMp5ds1GwGY7wECwvIZ5jzRJfc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.FeatureScenarioMapper.executor": "Run",
+    "Application.FeatureToJavaConverter.executor": "Run",
+    "Application.ScenarioMapperToHooks.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.TestRunner.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/Github Desktop/Java_Automation_Boilerplate",
+    "settings.editor.selected.configurable": "preferences.keymap"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Github Desktop\Java_Automation_Boilerplate\src\main\java\com\automation\boilerplate" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.automation.boilerplate.impl" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.TestRunner">
+    <configuration name="FeatureScenarioMapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.automation.boilerplate.util_featurescript.FeatureScenarioMapper" />
+      <module name="Java_Automation_Boilerplate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.boilerplate.util_featurescript.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FeatureToJavaConverter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.automation.boilerplate.util_featurescript.FeatureToJavaConverter" />
+      <module name="Java_Automation_Boilerplate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.boilerplate.util_featurescript.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScenarioMapperToHooks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.automation.boilerplate.util_featurescript.ScenarioMapperToHooks" />
+      <module name="Java_Automation_Boilerplate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.boilerplate.util_featurescript.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Java_Automation_Boilerplate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.boilerplate.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.boilerplate.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.boilerplate.impl.TestRunner" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.TestRunner" />
+        <item itemvalue="Application.FeatureToJavaConverter" />
+        <item itemvalue="Application.ScenarioMapperToHooks" />
+        <item itemvalue="Application.FeatureScenarioMapper" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f3933269-329c-4792-a8f8-86a36c40b8ca" name="Changes" comment="" />
+      <created>1730689119015</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730689119015</updated>
+    </task>
+    <servers />
+  </component>
+</project>
