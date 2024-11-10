@@ -16,7 +16,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = {
-                "src/main/resources/test001.feature",
+                "src/main/resources/TC001LoginFunction.feature",
         },
         glue = "com.automation.boilerplate.impl",
         monochrome = true,

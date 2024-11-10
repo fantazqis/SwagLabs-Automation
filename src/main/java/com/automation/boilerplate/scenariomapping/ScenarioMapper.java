@@ -13,7 +13,7 @@ Version 1.0
 
 
 public enum ScenarioMapper {
-    T1("Test001 Opening web");
+    T1("TS001 Login Valid");
 
     private String testName;
 

@@ -30,7 +30,7 @@ public class TestHooks {
     public static ExtentReports reports = new ExtentReports(GlobalFunction.rootProject+"/practiceautomation-report/extentreport/login.html");
     private static ScenarioMapper[] tests = ScenarioMapper.values();
     private static final int[] DATA_OUTLINE = {
-            /*Test001 Opening web*/ 1,
+            /*TS001 Login Valid*/ 1,
     };
 
     private String testReport = "";
