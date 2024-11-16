@@ -26,41 +26,47 @@ import java.time.Duration;
 public class Page_Menu {
     WebDriver driver;
 
-    @FindBy(xpath = "//div[@class='product_label']")
+    @FindBy(xpath = "//span[@class='title']")
     private WebElement textValidationMenuPage;
 
     @FindBy(xpath = "//select[@class='product_sort_container']")
     private WebElement dropdownMenu;
 
-    @FindBy(xpath = "//a[@class='shopping_cart_link fa-layers fa-fw']//*[name()='svg']")
+    @FindBy(xpath = "//a[@class='shopping_cart_link']")
     private WebElement buttonCart;
 
-    @FindBy(xpath = "//button[@class='btn_primary btn_inventory']")
-    private WebElement buttonAddToCart;
-
-    @FindBy(xpath = "//button[@class='btn_secondary btn_inventory']")
-    private WebElement buttonRemoveFromCart;
+    @FindBy(xpath = "//button[@id='react-burger-menu-btn']")
+    private WebElement buttonHamburger;
 
     @FindBy(xpath = "//div[normalize-space()='Sauce Labs Backpack']")
-    private WebElement item1;
+    private WebElement TextItem1;
 
-    @FindBy(xpath = "//div[@class='inventory_list']//div[1]//div[3]//button[1]")
+    @FindBy(xpath = "//button[@id='add-to-cart-sauce-labs-backpack']")
     private WebElement buttonAddToCartItem1;
 
-    @FindBy(xpath = "//div[normalize-space()='Sauce Labs Bike Light']")
-    private WebElement item2;
+    @FindBy(xpath = "//button[@id='remove-sauce-labs-backpack']")
+    private WebElement buttonRemoveItem1;
 
-    @FindBy(xpath = "//div[5]//div[3]//button[1]")
+    @FindBy(xpath = "//div[normalize-space()='Sauce Labs Bike Light']")
+    private WebElement textItem2;
+
+    @FindBy(xpath = "//button[@id='add-to-cart-sauce-labs-bike-light']")
     private WebElement buttonAddToCartItem2;
 
-    @FindBy(xpath = "//div[normalize-space()='Sauce Labs Bolt T-Shirt']")
-    private WebElement item3;
+    @FindBy(xpath = "//button[@id='remove-sauce-labs-bike-light']")
+    private WebElement buttonRemoveItem2;
 
-    @FindBy(xpath = "//div[3]//div[3]//button[1]")
+    @FindBy(xpath = "//div[normalize-space()='Sauce Labs Bolt T-Shirt']")
+    private WebElement textItem3;
+
+    @FindBy(xpath = "//button[@id='add-to-cart-sauce-labs-bolt-t-shirt']")
     private WebElement buttonAddToCartItem3;
 
-    @FindBy(xpath = "//button[normalize-space()='Open Menu']")
-    private WebElement buttonHamburger;
+    @FindBy(xpath = "//button[@id='remove-sauce-labs-bolt-t-shirt']")
+    private WebElement buttonRemoveItem3;
+
+    @FindBy(xpath = "//button[@id='continue-shopping']")
+    private WebElement buttonBackToProducts;
 
     @FindBy(xpath = "//a[@id='logout_sidebar_link']")
     private WebElement buttonLogout;
@@ -76,22 +82,61 @@ public class Page_Menu {
                 .until(ExpectedConditions.visibilityOf(textValidationMenuPage)).getText();
     }
 
-    public void clickButtonHamburger()
+    public void clicktext()
     {
-        new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
-                .until(ExpectedConditions.visibilityOf(buttonHamburger)).click();
+        try
+        {
+            new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
+                    .until(ExpectedConditions.visibilityOf(textValidationMenuPage)).click();
+        }
+        catch (Exception e)
+        {
+            System.out.println("Komponen Tombol burger Tidak Ditemukan !!");
+        }
     }
 
+    public void clickitem()
+    {
+        try
+        {
+            new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
+                    .until(ExpectedConditions.visibilityOf(buttonAddToCartItem1)).click();
+        }
+        catch (Exception e)
+        {
+            System.out.println("Komponen Tombol burger Tidak Ditemukan !!");
+        }
+    }
+
+    public void clickButtonHamburger()
+    {
+        try
+        {
+            new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
+                    .until(ExpectedConditions.visibilityOf(buttonHamburger)).click();
+        }
+        catch (Exception e)
+        {
+            System.out.println("Komponen Tombol burger Tidak Ditemukan !!");
+        }
+    }
+
+////    public void clickButtonHamburger()
+////    {
+////        new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
+////                .until(ExpectedConditions.visibilityOf(buttonHamburger)).click();
+////    }
+//
     public void clickButtonlogout()
     {
         new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
                 .until(ExpectedConditions.visibilityOf(buttonLogout)).click();
     }
 
-    public void clickButtonCart()
-    {
-        new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
-                .until(ExpectedConditions.visibilityOf(buttonCart)).click();
-    }
+//    public void clickButtonCart()
+//    {
+//        new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
+//                .until(ExpectedConditions.visibilityOf(buttonCart)).click();
+//    }
 
 }

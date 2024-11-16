@@ -52,7 +52,7 @@ public class TC_001_Login_Function {
     public void ts_001_validasi_halaman_login() {
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
         String validation = page_login.getValidationLoginPage();
-        Assert.assertEquals(validation, "Accepted usernames are:");
+        Assert.assertEquals(validation, "Swag Labs");
         System.out.println("1");
         extentTest.log(LogStatus.PASS, "TS001 Validasi Halaman Login");
     }
@@ -87,13 +87,18 @@ public class TC_001_Login_Function {
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
         String validation = page_menu.getValidationMenuPage();
         Assert.assertEquals(validation, "Products");
-        System.out.println("5");
+        System.out.println("validasi: "+validation);
+
+        System.out.println("selesai 5");
         extentTest.log(LogStatus.PASS, "TS001 Validasi Halaman Menu");
     }
 
     @When("TS001 Klik Tombol Hamburger")
     public void ts_001_klik_tombol_hamburger() {
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+        page_menu.clicktext();
+        page_menu.clickitem();
+        System.out.println("masuk 6");
         page_menu.clickButtonHamburger();
         System.out.println("6");
         extentTest.log(LogStatus.PASS, "TS001 Klik Tombol Hamburger");
@@ -102,6 +107,7 @@ public class TC_001_Login_Function {
     @And("TS001 Klik Logout")
     public void ts_001_klik_logout() {
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
+        GlobalFunction.delay(1);
         page_menu.clickButtonlogout();
         System.out.println("7");
         extentTest.log(LogStatus.PASS, "TS001 Klik Logout");
@@ -111,7 +117,7 @@ public class TC_001_Login_Function {
     public void ts_001_validasi_kembali_ke_halaman_login() {
         GlobalFunction.delay(Constants.TIMEOUT_DELAY);
         String validation = page_login.getValidationLoginPage();
-        Assert.assertEquals(validation, "Accepted usernames are:");
+        Assert.assertEquals(validation, "Swag Labs");
         System.out.println("8");
         extentTest.log(LogStatus.PASS, "TS001 Validasi Kembali Ke Halaman Login");
     }

@@ -12,6 +12,6 @@ public class Constants {
 	public static final String IE = "IE";
 	public static final String SAFARI = "Safari";
 	public static final String PACKAGE_NAME = "com.automation.boilerplate";
-	public static final String WEB_URL = "https://www.saucedemo.com/v1/";
+	public static final String WEB_URL = "https://www.saucedemo.com";
 	//tools: https://www.adminbooster.com/tool/trim
 }

@@ -26,25 +26,54 @@ import java.time.Duration;
 public class Page_Cart {
     WebDriver driver;
 
-    @FindBy(id = "user-name")
-    private WebElement textFieldUsername;
+    @FindBy(xpath = "//span[@class='title']")
+    private WebElement textPageCartValidation;
 
-    @FindBy(id = "password")
-    private WebElement textFieldPassword;
+    @FindBy(xpath = "//button[@id='remove-sauce-labs-backpack']")
+    private WebElement buttonRemoveItem1;
 
-    @FindBy(css = "#login-button")
-    private WebElement buttonLoginButton;
+    @FindBy(xpath = "//button[@id='remove-sauce-labs-bike-light']")
+    private WebElement buttonRemoveItem2;
 
-    @FindBy(xpath = "//h4[normalize-space()='Accepted usernames are:']")
-    private WebElement textValidationLoginPage;
+    @FindBy(xpath = "//button[@id='remove-sauce-labs-bolt-t-shirt']")
+    private WebElement buttonRemoveItem3;
+
+    @FindBy(xpath = "//button[@id='continue-shopping']")
+    private WebElement buttonContinueShopping;
+
+    @FindBy(xpath = "//button[@id='checkout']")
+    private WebElement buttonCheckoutCart;
+
+
+    @FindBy(id = "first-name")
+    private WebElement textFieldCheckoutFormFirstName;
+
+    @FindBy(id = "last-name")
+    private WebElement textFieldCheckoutFormLastName;
+
+    @FindBy(id = "postal-code")
+    private WebElement textFieldCheckoutFormZipCode;
 
     @FindBy(xpath = "//h3[@data-test='error']")
-    private WebElement alertLoginWrongCredential;
+    private WebElement alertFormCheckout;
 
     @FindBy(xpath = "//button[@class='error-button']//*[name()='svg']")
-    private WebElement logoAlertLoginWrongCredential;
+    private WebElement alertCloseFormCheckout;
 
-//    validasi cart : //div[@class='subheader']
+    @FindBy(xpath = "//button[@id='cancel']")
+    private WebElement buttonCancelCheckout;
+
+    @FindBy(xpath = "//input[@id='continue']")
+    private WebElement buttonContinueCheckout;
+
+    @FindBy(xpath = "//button[@id='finish']")
+    private WebElement buttonFinishCheckout;
+
+    @FindBy(xpath = "//h2[@class='complete-header']")
+    private WebElement textFinishOrderValidation;
+
+    @FindBy(xpath = "//button[@id='back-to-products']")
+    private WebElement buttonBackToHomepage;
 
 
     public Page_Cart(WebDriver driver){
@@ -52,90 +81,7 @@ public class Page_Cart {
         PageFactory.initElements(this.driver,this);
     }
 
-    public void clearLoginForm()
-    {
-        try
-        {
-            /** Set Field Password Empty String */
-            new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
-                    .until(ExpectedConditions.visibilityOf(textFieldUsername)).clear();
-            /** Set Field Username Empty String */
-            new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
-                    .until(ExpectedConditions.visibilityOf(textFieldPassword)).clear();
-        }
-        catch (Exception e)
-        {
-            System.out.println(e.getMessage());
-        }
-    }
 
-    public void inputUsername(String username)
-    {
-        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
-
-        try{
-            new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
-                    .until(ExpectedConditions.visibilityOf(textFieldUsername)).sendKeys(username);
-        }catch (Exception e){
-            System.out.println("Komponen Text Field Input Username Tidak Ditemukan !!");
-        }
-    }
-
-    public void inputPassword(String password)
-    {
-        try
-        {
-            new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
-                    .until(ExpectedConditions.visibilityOf(textFieldPassword)).sendKeys(password);
-        }
-        catch (Exception e)
-        {
-            System.out.println("Komponen Text Field Input Password Tidak Ditemukan !!");
-        }
-    }
-
-    public void clickButtonLogin()
-    {
-        try
-        {
-            new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
-                    .until(ExpectedConditions.visibilityOf(buttonLoginButton)).click();
-        }
-        catch (Exception e)
-        {
-            System.out.println("Komponen Tombol Login Submit Tidak Ditemukan !!");
-        }
-    }
-
-    public String getAlertLoginWrongCredential()
-    {
-        return (this.alertLoginWrongCredential == null) ? "" : new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
-                .until(ExpectedConditions.visibilityOf(alertLoginWrongCredential)).getText();
-    }
-
-
-    public boolean getLogoAlertLoginWrongCredential()
-    {
-        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
-        try
-        {
-            new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
-                    .until(ExpectedConditions.visibilityOf(logoAlertLoginWrongCredential));
-            return true;
-        }
-        catch (Exception e)
-        {
-            System.out.println("Komponen Alert Login Tidak Ditemukan !!");
-            return false;
-        }
-
-    }
-
-    public String getValidationLoginPage()
-    {
-        return (this.textValidationLoginPage == null) ? "" : new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
-                .until(ExpectedConditions.visibilityOf(textValidationLoginPage)).getText();
-    }
 
 
 }

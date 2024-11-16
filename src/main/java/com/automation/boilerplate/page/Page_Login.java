@@ -35,14 +35,15 @@ public class Page_Login {
     @FindBy(css = "#login-button")
     private WebElement buttonLoginButton;
 
-    @FindBy(xpath = "//h4[normalize-space()='Accepted usernames are:']")
+    @FindBy(xpath = "//div[@class='login_logo']")
     private WebElement textValidationLoginPage;
 
+
     @FindBy(xpath = "//h3[@data-test='error']")
-    private WebElement alertLoginWrongCredential;
+    private WebElement alertLogin;
 
     @FindBy(xpath = "//button[@class='error-button']//*[name()='svg']")
-    private WebElement logoAlertLoginWrongCredential;
+    private WebElement buttonAlertClose;
 
     public Page_Login(WebDriver driver){
         this.driver= DriverSingleton.getDriver();
@@ -104,28 +105,23 @@ public class Page_Login {
         }
     }
 
-    public String getAlertLoginWrongCredential()
+    public String getAlertLogin()
     {
-        return (this.alertLoginWrongCredential == null) ? "" : new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
-                .until(ExpectedConditions.visibilityOf(alertLoginWrongCredential)).getText();
+        return (this.alertLogin == null) ? "" : new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
+                .until(ExpectedConditions.visibilityOf(alertLogin)).getText();
     }
 
-
-    public boolean getLogoAlertLoginWrongCredential()
+    public void clickButtonAlertClose()
     {
-        GlobalFunction.delay(Constants.TIMEOUT_DELAY);
         try
         {
             new WebDriverWait(driver, Duration.ofSeconds(Constants.TIMEOUT_DELAY))
-                    .until(ExpectedConditions.visibilityOf(logoAlertLoginWrongCredential));
-            return true;
+                    .until(ExpectedConditions.visibilityOf(buttonAlertClose)).click();
         }
         catch (Exception e)
         {
-            System.out.println("Komponen Alert Login Tidak Ditemukan !!");
-            return false;
+            System.out.println("Komponen Tombol Login Submit Tidak Ditemukan !!");
         }
-
     }
 
     public String getValidationLoginPage()
